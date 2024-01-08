@@ -21,6 +21,23 @@ const { description, title } = Astro.props
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content={Astro.url}>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/54672897?v=4">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="bernabe.dev">
+    <meta property="twitter:url" content={Astro.url}>
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={description}>
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/54672897?v=4">
+
   </head>
 
   <body class="relative text-black dark:text-white">
